@@ -1,0 +1,138 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no maximum-scale=1.0, minimum-scale=1.0")
+        title Gulp+Pug+Sass+Jquery
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap&subset=cyrillic')
+        link(rel='stylesheet', href='css/main.css')
+
+    body
+        .wrapper
+            div.product-box
+                div.product-title.product-title-mob for gamers by gamers tee
+                div.product-image-box
+                    img.product-img(src='./img/t_img.jpg' alt='img')
+                    ul.share-box-list-pl
+                        li
+                            a(href='#')
+                                img(src='./img/soc_f.png' alt='img')
+                        li
+                            a(href='#')
+                                img(src='./img/soc_t.png' alt='img')
+                        li
+                            a(href='#')
+                                img(src='./img/soc_p.png' alt='img')
+                        li
+                            a(href='#')
+                                img(src='./img/soc_y.png' alt='img')
+                div.product-info
+                    div.product-title.product-title-desc for gamers by gamers tee
+                    div.code_item Item #: 701642853695
+                    div.item-price
+                        span.old-price $29.50
+                        span.hot-price $19.99
+                    div.star-flex
+                        span.star-box
+                            span.st.st-star.checked
+                            span.st.st-star.checked
+                            span.st.st-star
+                            span.st.st-star
+                            span.st.st-star
+                        //img(src='./img/stars.png' alt='img')
+                        span.share-box
+                            a.share-btn(href='#') Share it!
+                            ul.share-box-list
+                                li
+                                    a(href='#')
+                                        img(src='./img/soc_f.png' alt='img')
+                                li
+                                    a(href='#')
+                                        img(src='./img/soc_t.png' alt='img')
+                                li
+                                    a(href='#')
+                                        img(src='./img/soc_p.png' alt='img')
+                                li
+                                    a(href='#')
+                                        img(src='./img/soc_y.png' alt='img')
+                                li
+                                    span
+                                        img(src='./img/close.png' alt='img')
+
+                    div.item-subtitle.item-subtitle-det DETAILS:
+                    div.product-descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    div.item-subtitle
+                        span.item-subtitle-name
+                            span select a
+                            span  size:
+                        span.size_item.size_1 xs
+                        span.size_item.size_2 s
+                        span.size_item.size_3.active m
+                    div.item-subtitle
+                        span.item-subtitle-name
+                            span select a
+                            span  color:
+                        span.color_item.active(style={background: '#77d8e7'})
+                        span.color_item(style={background: '#96c795'})
+                        span.color_item(style={background: '#ce92a1'})
+                        span.color_item(style={background: '#aa93cf'})
+                    div.add_btn add to cart
+            div.like-title YOU MAY ALSO like
+
+
+            .flex-elem
+                .flex
+                    .item
+                        div.like-box
+                            a(href='#')
+                                img(src='./img/fgbg-man-front.jpg' alt='img')
+                            div.like-price
+                                span.old-price $29.99
+                                span.red-price $19.99
+
+                        div.like-item-title For gamers by gamers TEE
+                    .item
+                        div.like-box
+                            a(href='#')
+                                img(src='./img/fgbg-man-front.jpg' alt='img')
+                            div.like-price
+                                span $22.00
+                        div.like-item-title PRO gamer SLASH HOODIE
+                    .item
+                        div.like-box
+                            a(href='#')
+                                img(src='./img/fgbg-man-front.jpg' alt='img')
+                            div.like-price
+                                span $24.99
+                        div.like-item-title spectroom GAMER TEE
+                    .item
+                        div.like-box
+                            a(href='#')
+                                img(src='./img/fgbg-man-front.jpg' alt='img')
+                            div.like-price
+                                span.old-price $29.99
+                                span.red-price $19.99
+
+                        div.like-item-title GAMING FOR GOOD TEE
+                    .item
+                        div.like-box
+                            a(href='#')
+                                img(src='./img/fgbg-man-front.jpg' alt='img')
+                            div.like-price
+                                span $60.00
+                        div.like-item-title spectroom web hoodie
+                    .item
+                        div.like-box
+                            a(href='#')
+                                img(src='./img/fgbg-man-front.jpg' alt='img')
+                            div.like-price
+                                span $54.00
+                        div.like-item-title spectroom varsity hoodie
+                .nav
+                    span.prev(data-type='prev')
+                    span.next(data-type='next')
+
+  
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='js/main.js')
+

@@ -1,0 +1,345 @@
+@import "parts/variables.sass"
+@import "parts/fonts.sass"
+@import "parts/nav.sass"
+@import "parts/sidebar.sass"
+
+
+
+*
+    outline: none!important
+body,
+html
+  background: #f6f6f6
+  color: $black
+
+body
+  font-family: "Open Sans"
+  margin: 0
+
+*, ::after, ::before
+  box-sizing: inherit
+
+img
+  vertical-align: middle
+  border-style: none
+
+
+.wrapper
+  margin: 30px 50px
+.item
+  counter-increment: item
+  img
+    width: 100%
+
+.flex
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -10px
+  width: calc(100% + 20px)
+  counter-reset: item
+
+.flex .item
+  width: calc((100% / 3) - 20px)
+  margin: 0 10px 20px 10px
+
+
+
+.product-title
+  font-family: 'Oswald'
+  color: $darkblue
+  font-size: 24px
+  line-height: 24px
+  letter-spacing: 0.05em
+  margin: 0 0 14px 0
+  text-transform: uppercase
+  font-weight: bold
+
+.star-flex
+  display: flex
+  flex-wrap: wrap
+  margin: 19px 0 15px 0
+.star-box
+  display: inline-block
+  margin: 1px 0 0 0
+  .st
+    display: inline-block
+    width: 18px
+    height: 18px
+    margin: 0 1px 0 0
+    cursor: pointer
+    &.st-star
+      background: url(../img/st-gr.png) no-repeat 0 0
+      // color: #ababab /* if use fonts */
+      &:before
+        content: "" /* if use fonts */
+      &.checked
+        background: url(../img/st-red.png) no-repeat 0 0
+        // color: $red /* if use fonts */
+.share-btn
+  font-size: 18px
+  color: $light-blue
+  font-weight: bold
+  line-height: 18px
+  letter-spacing: 0.025em
+  margin: 0 0 0 15px
+  &:hover
+    color: $light-blue
+    text-decoration: none
+.code_item
+  color: $darkblue
+  font-size: 10px
+  letter-spacing: .05em
+  font-weight: 600
+  opacity: 0.7
+.item-price
+  color: $darkblue
+  font-size: 24px
+  font-weight: bold
+  margin: 12px 0 0 0
+  span.hot-price
+    color: $red
+    padding: 0 0 0 26px
+  span.old-price
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      width: 100%
+      height: 1px
+      background: $darkblue
+      left: 0
+      top: 50%
+.item-subtitle
+  color: #282828
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+  margin: 0 0 14px 0
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  span
+    &:last-child
+      margin: 0
+.item-subtitle-name
+  margin: 0 11px 0 0
+  min-width: 60px
+  letter-spacing: .05em
+  span:first-child
+    display: none
+
+.add_btn
+  color: $darkblue
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+  max-width: 214px
+  text-align: center
+  background: #8ae6cf
+  height: 44px
+  line-height: 44px
+  border-radius: 50px
+  cursor: pointer
+  letter-spacing: .05em
+.like-title
+  font-size: 22px
+  line-height: 24px
+  margin: 0 0 16px 0
+  letter-spacing: 0.075em
+  color: $darkblue
+  font-weight: bold
+  text-transform: uppercase
+
+/**/
+.like-item-title
+  color: $darkblue
+  font-size: 16px
+  letter-spacing: 0.05em
+  margin: 12px 0 5px 0
+  line-height: 18px
+  font-weight: bold
+  text-transform: uppercase
+  text-align: center
+.like-box
+  position: relative
+  box-sizing: border-box
+  .like-price
+    position: absolute
+    right: 0
+    bottom: 22px
+    background: #8ae6cf
+    padding: 0 6px
+    height: 22px
+    line-height: 22px
+  span
+    font-size: 16px
+    color: $darkblue
+    font-weight: bold
+    letter-spacing: 0.075em
+    &.old-price
+      position: relative
+      padding: 0 1px
+      margin: 0 13px 0 0
+      &:after
+        position: absolute
+        content: ""
+        background: $darkblue
+        width: 100%
+        height: 1px
+        left: 0
+        top: 50%
+    &.red-price
+      color: $red
+/**/
+.product-box
+  display: flex
+  flex-wrap: wrap
+  margin: 0 0 60px 0
+  width: 100%
+  .product-descr
+    margin: 20px 0 15px 0
+    font-size: 12px
+    line-height: 16px
+    /*max-width: 50%*/
+  .product-img
+    order: 1
+    width: 100%
+    max-width: 400px
+    margin: 0 56px 0 0
+    height: auto
+  .product-info
+    order: 2
+    width: calc(100% - 456px)
+
+
+
+
+/**/
+.color_item
+  width: 39px
+  height: 39px
+  display: inline-block
+  margin: 2px 13px 0 0
+  border-radius: 50%
+  cursor: pointer
+  &.active
+    box-shadow: 0 0 14px 0 rgba(0,0,0,0.75)
+  &:hover
+    box-shadow: 0 0 14px 0 rgba(0,0,0,0.75)
+.color_1
+  background: #cccccc
+
+.size_item
+  width: 39px
+  height: 39px
+  display: inline-block
+  font-size: 12px
+  text-transform: uppercase
+  border-radius: 50%
+  cursor: pointer
+  text-align: center
+  border: 1px solid #cccccc
+  background: $white
+  padding: 10px 0 0 0
+  margin: 0 11px 0 0
+  box-sizing: border-box
+  &.active
+    box-shadow: 0 0 14px 0 rgba(0,0,0,0.75)
+  &:hover
+    box-shadow: 0 0 14px 0 rgba(0,0,0,0.75)
+
+.share-box-list-pl
+  display: none
+.share-box
+  position: relative
+.share-box-list
+  margin: 0
+  list-style: none
+  flex-wrap: wrap
+  position: absolute
+  align-items: center
+  z-index: 1
+  width: 288px
+  padding: 21px 10px 18px
+  background: $white
+  justify-content: space-evenly
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4)
+  box-sizing: border-box
+  left: -89px
+  bottom: -90px
+  display: flex
+  display: none
+  span
+    cursor: pointer
+    display: inline-block
+  &.active
+    display: flex
+  &:after
+    top: 1px
+    content: ""
+    position: absolute
+    width: 0
+    height: 0
+    margin-left: -0.5em
+    bottom: -2em
+    left: 57%
+    box-sizing: border-box
+    border: 1em solid black
+    border-width: 7px 0 5px 13px
+    border-color: transparent transparent $white $white
+    transform-origin: 0 0
+    transform: rotate(135deg)
+    box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.2)
+  a
+    display: inline-block
+
+  #sliderwrap
+    width: 100%
+    position: relative
+    overflow: hidden
+    user-select: none
+    text-align: center
+
+  #sliderprod
+    position: relative
+    width: calc(100% * 1)
+    transition: 1s
+    transition-timing-function: cubic-bezier(.67,.01,.23,1)
+
+
+  #sliderprod, #sliderprod .item
+    margin: 0
+    padding: 0
+
+  #prev-btn, #next-btn
+    position: absolute
+    width: 50px
+    height: 50px
+    background-color: $white
+    border-radius: 50%
+    top: calc(50% - 25px)
+
+  #prev-btn:hover, #next-btn:hover
+    cursor: pointer
+
+  #prev-btn
+   left: 20px
+
+  #next-btn
+    right: 20px
+  .slide-nav-btn
+    position: relative
+    display: inline-block
+    list-style: none
+    width: 20px
+    height: 20px
+    background-color: $white
+    border-radius: 50%
+    margin: 3px
+
+  .slide-nav-btn:hover
+    cursor: pointer
+
+
+
+@import "parts/media"
